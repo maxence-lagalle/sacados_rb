@@ -16,6 +16,7 @@ def sacados_bruteforce(items, target)
             if (digit == 1)
                 current_sac.push(items[digit])
                 current_target += itmes[digit]["value"]
+            end
         end
         if (current_target <= target)
             if (current_target > best_target)
