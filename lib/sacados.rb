@@ -13,9 +13,9 @@ def sacados_bruteforce(items, target)
         current_sac = []
         current_target = 0
         for digit in (0..nb_items-1)
-            if (digit == 1)
+            if (sac_bin[digit] == "1")
                 current_sac.push(items[digit])
-                current_target += itmes[digit]["value"]
+                current_target += items[digit]["value"]
             end
         end
         if (current_target <= target)
